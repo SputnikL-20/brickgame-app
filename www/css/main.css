@@ -1,0 +1,242 @@
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	@font-face {
+		font-family: "DS-Digital";
+		src: url("../fonts/DS-DIGIB.TTF");
+	}
+	.point {
+		float: right;
+		position: relative;
+		clear: both;
+		font-family: "DS-Digital";
+		margin-top: 3%;
+		font-size: xx-large;
+	}
+	.level {
+		float: right;
+		position: relative;
+		clear: both;
+		font-family: "DS-Digital";
+		font-size: xx-large;
+	}
+	.display-area {
+		position: absolute;
+		width: 60%;
+		display: block;
+	}	
+	.window-area {
+		position: relative;
+		width: 30%;
+		float: right;
+		top: 7%;
+		clear: both;
+	}	
+	table{
+		border-collapse: collapse;
+		border-spacing: 0;
+		margin-left: 5%;
+		margin-top: 5%;
+		/* border: 1px solid black; */
+	}
+	td {
+		padding: 0;
+		cursor: default;
+		/* border: 1px solid black; */
+	}
+	.td-border {
+		border: 0.1px solid #cdcdcd;
+	}
+	span:focus { 
+		text-indent: -9999em; 
+	}
+	span:focus {
+		outline : none;
+	}
+	span:focus {
+		outline: none;
+		box-shadow: 0 0 1px 1px #4d90f0;
+	}
+	span:focus::-moz-placeholder {
+		color: transparent;
+	}
+	span:focus::-webkit-input-placeholder {
+		color: transparent;
+	}
+	canvas{
+		display: block;
+	}
+	#container {
+		position: inherit;
+		padding: 10px;
+		/* margin: 10px; */
+		height: 97.3vh;
+		/* border: 0.1px solid #cdcdcd; */
+		z-index: 1;
+		overflow: visible;
+	}
+	#notefication {
+		position: fixed;
+		top: 8.5em;
+		padding-left: 13%;
+		font-family: "DS-Digital";
+		color: red;
+		z-index: 2;
+		font-size: xx-large;
+	}
+	#notes {
+		position: relative;
+		float: right;
+		top: 4.7em;
+		clear: both;
+		width: 30%;
+		font-family: "DS-Digital";
+		color: cornflowerblue;
+		font-size: xx-large;
+	}
+	h1 {
+		margin: 0 auto;
+		padding-bottom: 0px;
+	}
+	.button {
+		background: #4CAF50;
+		width: 40px; 
+		height: 30px;
+		border-radius: 50%;
+		display: inline-block;
+		border: none;
+		text-decoration: none;
+		color: white;
+	}
+	.button:hover {
+		border: none;
+		text-decoration: none;
+		/* cursor: pointer; */
+	}	
+	.button:active {
+		border: none;
+		text-decoration: none;
+		background: #F0E68C;
+	}	
+	.button:focus {
+		border: none;
+		text-decoration: none;
+	}	
+	.stop {
+		font-size: x-small;
+		text-align: center;
+		height: 25px; 
+		width: 25px;
+		margin-right: 13%;
+	}
+	#comunication {
+		display: block;
+		position: sticky;
+		top: 33em;
+		clear: both;
+		/* height: 160px; */
+		/* background: gray; */
+	}
+	.comunication {
+		margin: 0 auto;
+		width:100%;
+		text-align: center;
+		/* border: 0.1px solid #cdcdcd;  */
+		height: inherit;
+	}
+	#watch {
+		float: right;
+		position: relative;
+		clear: both;
+		font-family: "DS-Digital";
+		font-size: xx-large;
+	}	
+	
+	audio {
+		width: 100%;
+		/* background: blue; */
+	}
+	.setting {
+		position: relative;
+		width: 30%;
+		float: right;
+		top: 14%;
+		clear: both;		
+		font-family: "DS-Digital";
+		font-size: x-large;
+	}
+	/* label { */
+		/* margin: auto; */
+		/* padding: 10px; */
+		/* text-align: center; */
+	/* } */
+
+
+	
+ /* Customize the label (the container) */
+.container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-right: 35px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #4CAF50; /* #eee; */
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+/* .container .checkmark:after { */
+  /* top: 9px; */
+  /* left: 9px; */
+  /* width: 8px; */
+  /* height: 8px; */
+  /* border-radius: 50%; */
+  /* background: white; */
+/* }  */

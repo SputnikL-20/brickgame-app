@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/main.css" rel="stylesheet">
+	<script src="js/watch.js"></script>
+	<script src="js/tetris.main.js"></script>
+	<title>T TETRIS</title>
+</head>
+<body>
+
+<div id="container">
+
+	<div class="point">S: 0</div>
+	<div class="level">L: 0</div>
+	<div id="watch">
+		<span id="hour">00</span>:<span id="min">00</span><span id="timer">:</span><span id="sec">00</span>
+	</div>
+		
+		
+	<script> drawArea(); </script>
+		
+	<div id="notefication"></div>
+	
+	<script> drawNotes(); </script>
+
+	<div id="comunication">
+		<table class="comunication">
+			<tbody>
+				<tr>
+					<td style="text-align: right;" colspan="4">
+						<button class="button" onClick='getMusic()' style="width:25px;height:25px;margin-right:10%;" ></button>
+						<button class="button" onClick="getSound()" style="width:25px;height:25px;margin-right:10%;" ></button>
+						<button class="button stop" onclick="pauseResume()" ></button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="width:50%">
+						<button class="button btn" style="padding:25px"></button>
+					</td>
+					<td rowspan="3" style="width:25%">
+					</td>
+					<td rowspan="3" style="width:25%">
+						<button class="button btn" onclick="rotateShape(shape_mod, _ID)" style="padding:40px;margin-left:15%;"></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="button btn" onclick="oneLeftShape(shape_mod)" style="padding:25px;margin-right:45%;"></button>
+					</td>
+					<td>
+						<button class="button btn" onclick="oneRightShape(shape_mod)" style="padding:25px;margin-left:45%"></button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button class="button btn" onclick="getDownPlusSound()" style="padding:25px"></button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+</div>
+
+</body>
+</html>

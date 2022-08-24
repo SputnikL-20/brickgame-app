@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/main.css" rel="stylesheet">
+	<script src="js/watch.js"></script>
+	<script src="js/snake.main.js"></script>
+	
+</head>
+<body>
+
+<div id="container">
+
+	<div class="point">S: 0</div>
+	<div class="level">L: 0</div>
+	<div id="watch">
+		<span id="hour">00</span>:<span id="min">00</span><span id="timer">:</span><span id="sec">00</span>
+	</div>
+	
+		<script> drawArea(); </script>
+
+	<div id="notefication"></div>
+
+	<div id="comunication">
+		<table class="comunication">
+			<tbody>
+				<tr>
+					<td colspan="2" style="width:50%">
+						<button class="button btn" onclick="drawSnakeUp()" style="padding:25px"></button>
+					</td>
+					<td rowspan="3" style="width:25%">
+						<button class="button stop" onclick="pauseResume()" style="margin-left:20%"></button>
+					</td>
+					<td rowspan="3" style="width:25%">
+						<button class="button btn" style="padding:40px;margin-left:15%;"></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="button btn" onclick="drawSnakeLeft()" style="padding:25px;margin-right:45%;"></button>
+					</td>
+					<td>
+						<button class="button btn" onclick="drawSnakeRight()" style="padding:25px;margin-left:45%"></button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button class="button btn" onclick="drawSnakeDown()" style="padding:25px"></button>
+					</td>
+				</tr>
+			</tbody>
+		<table>
+
+	</div>
+
+</div>
+
+</body>
+</html>
